@@ -40,17 +40,38 @@ public class diffBetweenMaxMin {
 
         int[] useThisArray = new int[strArr.length];
 
-        for(int i = 0 ; i< strArr.length ; i++){
+        for (int i = 0; i < strArr.length; i++) {
 
-            int num =Integer.parseInt(strArr[i]);
+            int num = Integer.parseInt(strArr[i]);
             useThisArray[i] = num;
 
         }
 
-    // Your code start here. Don't remove or change anything before this line. Your array is -> useThisArray in line 27
-    // Kodlamaya burdan başla.Bu satırdan önceki satırlarda hiçbirşeyi kaldırma ve degiştirme. Kullanacağın array 27.ci satırda  --> useThisArray
+        // Your code start here. Don't remove or change anything before this line. Your array is -> useThisArray in line 27
+        // Kodlamaya burdan başla.Bu satırdan önceki satırlarda hiçbirşeyi kaldırma ve degiştirme. Kullanacağın array 27.ci satırda  --> useThisArray
 
 
+        int fark = farkBul(useThisArray);
+        System.out.println("fark : " + fark);
+
+    }
+
+    private static int farkBul(int[] useThisArray) {
+        int min = useThisArray[0];
+        int max = useThisArray[0];
+        int fark = 0;
+
+        for (int i = 0; i < useThisArray.length; i++) {
+
+            min=Math.min(min,useThisArray[i]);
+            max=Math.max(max,useThisArray[i]);
+
+        }
+
+        fark = max - min;
+
+
+        return fark;
     }
 
 }

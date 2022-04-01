@@ -44,8 +44,11 @@ ters arrayi yazdır
      //        code start here
      //        Koda burdan başlayın
 
-
-
+String newArr[]=new String[useThisArray.length];
+        for (int i = 0; i <useThisArray.length ; i++) {
+            newArr[i] = useThisArray[useThisArray.length - i-1];
+        }
+        System.out.println(Arrays.toString(newArr));
     }
 
 }

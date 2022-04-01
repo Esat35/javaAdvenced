@@ -30,6 +30,20 @@ public class minNumber {
 
       */
 
+        int array1[][]={{1,2,3}, {2,3,1} , {5,5,5} , {2,10,3}};
+        int minNumberOfSecond=array1[0][0];
+
+        for (int i=0; i<array1.length; i++){
+
+            for (int j=0; j< array1[i].length;j++){
+                minNumberOfSecond=array1[i][0];//inner arrayın ılk elemanını mınımum kabul ettık.
+                minNumberOfSecond=Math.min(minNumberOfSecond,array1[i][j]);
+
+            }
+            System.out.print(minNumberOfSecond+" ");
+
+        }
+
     }
 
 }

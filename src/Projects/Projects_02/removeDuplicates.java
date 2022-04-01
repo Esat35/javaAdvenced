@@ -1,7 +1,6 @@
 package Projects.Projects_02;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 public class removeDuplicates {
 
@@ -67,6 +66,24 @@ public class removeDuplicates {
 
         // Kodlamaya burdan başla.bu satırdan önceki satirlarda hicbirşeyi  degiştirme.
         //   useThisLine arrayini kullan
+
+        List<Integer> tekrarsızList=new ArrayList<Integer>();
+
+        for (int i = 0; i <useThisArray.length ; i++) {
+           if ( !tekrarsızList.contains(useThisArray[i])){
+               tekrarsızList.add(useThisArray[i] );
+           }
+
+        }
+
+        int array[]= new int[tekrarsızList.size()];
+        for (int i = 0; i < tekrarsızList.size(); i++) {
+            array[i]= tekrarsızList.get(i);
+        }
+
+        System.out.println(Arrays.toString(array));
+
+
 
 
     }

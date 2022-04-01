@@ -33,6 +33,21 @@ public class maxNumber {
 
       */
 
+        int array1[][]={{1,2,3}, {2,3,1} , {5,5,5} , {2,10,3}};
+        int maxNumberOfSecond=array1[0][0];
+
+        for (int i=0; i<array1.length; i++){
+
+            maxNumberOfSecond=array1[i][0];
+
+            for (int j=0; j< array1[i].length;j++){
+
+                maxNumberOfSecond=Math.max(maxNumberOfSecond,array1[i][j]);
+
+            }
+            System.out.print(maxNumberOfSecond+" ");
+        }
+
     }
 
 }

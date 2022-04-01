@@ -36,13 +36,22 @@ public class sameFirstAndLast {
 
         String myStr = scan.nextLine();
 
-        String[] useThisArray = myStr.split(" ");
+        String[] useThisArray = myStr.split("");
 
       //  code start here
       // Koda burdan başlayin
+        int arr[]=new int[useThisArray.length];
 
+        for (int i = 0; i <useThisArray.length ; i++) {
+          int  num = myStr.indexOf(useThisArray[i] );
+          arr[i] = num;
+        }
 
-
+        if (arr.length==1||arr[0]==arr[arr.length-1]){
+            System.out.println(true);
+        }else {
+            System.out.println(false);
+        }
 
     }
 

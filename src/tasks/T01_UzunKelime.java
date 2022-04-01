@@ -3,7 +3,7 @@ package tasks;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class T01 {
+public class T01_UzunKelime{
     public static void main(String[] args) {
         /*
          * Kullanicidan gelen cumleyi  parametre olarak alan

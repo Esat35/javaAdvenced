@@ -56,9 +56,24 @@ public class arrayContains {
 //        Koda burdan başla
 //        UseThisArray1 ve UseThisArray2 array isimlerini kullan
 
+boolean contains=false;
+        for (int i = 0; i <UseThisArray2.length ; i++) {
+
+            for (int j = 0; j < UseThisArray1.length ; j++) {
+
+                if (UseThisArray2[i]==UseThisArray1[j]) {
+                    contains=true;
+break;
+                }
+            }
+        }
 
 
-
+        if(contains){
+            System.out.println(true);
+        }else {
+            System.out.println(false);
+        }
 
 
 
