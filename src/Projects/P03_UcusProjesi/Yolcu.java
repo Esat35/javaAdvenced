@@ -8,7 +8,6 @@ public class Yolcu {
     String flytype;
 
     public Yolcu(String city) {
-
         this.city = city;
     }
 
